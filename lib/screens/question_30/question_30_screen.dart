@@ -10,6 +10,10 @@ class QuestionThirtyScreen extends StatefulWidget {
 class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text('Question 30 screen'));
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Question 30'),
+        ),
+        body: const Text('Question 30 screen'));
   }
 }

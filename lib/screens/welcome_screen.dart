@@ -23,7 +23,7 @@ class QuestionListScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             final question = usabilityQuestions[index];
             return Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(1.0),
               child: InkWell(
                 child: QuestionTile(index: index + 1, question: question),
                 onTap: () =>
@@ -32,7 +32,7 @@ class QuestionListScreen extends StatelessWidget {
             );
           },
           separatorBuilder: (context, index) {
-            return const SizedBox(height: 12.0);
+            return const SizedBox(height: 8.0);
           },
         ),
       ),

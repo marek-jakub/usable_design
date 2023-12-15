@@ -12,22 +12,29 @@ class QuestionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 85,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(index.toString()),
-          const SizedBox(width: 8.0),
-          Expanded(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          decoration:
+              const BoxDecoration(shape: BoxShape.circle, color: Colors.grey),
+          margin: const EdgeInsets.fromLTRB(0, 0, 4, 0),
+          padding: const EdgeInsets.all(7),
+          child: Text(
+            (index < 10 ? '0$index' : index.toString()),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 7, 0, 0),
             child: Text(
               question,
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.justify,
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
