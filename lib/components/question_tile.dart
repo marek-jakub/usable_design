@@ -29,12 +29,20 @@ class QuestionTile extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 7, 0, 0),
             child: Text(
-              question,
+              _formatQuestionText(question),
               textAlign: TextAlign.justify,
             ),
           ),
         ),
       ],
     );
+  }
+
+  String _formatQuestionText(String question) {
+    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
+    question = question.replaceAll('\n', '');
+    question = question.replaceAll(extraWhiteSpace, ' ');
+
+    return question;
   }
 }
