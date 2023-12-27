@@ -26,6 +26,7 @@ class QuestionTile extends StatelessWidget {
           ),
         ),
         Expanded(
+          key: ValueKey('question $index'),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 7, 0, 0),
             child: Text(
