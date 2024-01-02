@@ -1,5 +1,5 @@
 class Europe {
-  Map<String, bool> europeanEUMembership = {
+  Map<String, bool> euMembership = {
     'Albania': false,
     'Andorra': false,
     'Armenia': false,
@@ -52,4 +52,6 @@ class Europe {
     'United Kingdom': false,
     'Vatican City': false,
   };
+
+  Map<String, bool> get europeCountries => euMembership;
 }
