@@ -1,5 +1,6 @@
 class Europe {
   Map<String, bool> euMembership = {
+    '': true,
     'Albania': false,
     'Andorra': false,
     'Armenia': false,
