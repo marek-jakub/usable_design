@@ -27,6 +27,7 @@ class _StateDropdownField extends State<StateDropdownField> {
           icon: const Icon(Icons.arrow_downward),
           value: widget._controller.text,
           decoration: InputDecoration(
+            border: const OutlineInputBorder(),
             label: Text(widget._label),
           ),
           validator: (value) {
@@ -35,7 +36,7 @@ class _StateDropdownField extends State<StateDropdownField> {
             }
             return null;
           },
-          menuMaxHeight: 200.0,
+          menuMaxHeight: 250.0,
           padding: const EdgeInsets.fromLTRB(10, 7, 10, 7),
           onChanged: (String? value) {
             setState(() {

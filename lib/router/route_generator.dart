@@ -13,6 +13,9 @@ class RouteGenerator {
       case '/question_30':
         return MaterialPageRoute(
             settings: settings, builder: (_) => const QuestionThirtyScreen());
+      case '/references':
+        return MaterialPageRoute(
+            settings: settings, builder: (_) => const ReferencesScreen());
 
       default:
         return _errorRoute();
