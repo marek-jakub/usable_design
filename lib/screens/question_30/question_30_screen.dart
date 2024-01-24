@@ -74,8 +74,9 @@ class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 7, 10, 7),
               child: CheckboxListTile(
+                  key: const ValueKey('EU_member'),
                   title: const Text(
-                      'Country of origin a member of European Union?'),
+                      'Is the country of origin a member of European Union?'),
                   value: _euMember,
                   onChanged: (bool? value) {
                     setState(() {
@@ -95,6 +96,7 @@ class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 7, 10, 7),
               child: StateDropdownField(
+                key: const ValueKey('country'),
                 controller: _state,
                 txtLabel: 'Country',
                 listValues: _countries,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:usable_design/main.dart';
+import 'package:usable_design/screens/question_30/state_dropdown_field.dart';
 
 Future<void> addDelay(int ms) async {
   await Future<void>.delayed(Duration(milliseconds: ms));
@@ -46,5 +47,32 @@ void main() {
     expect(find.text('Question 30'), findsOneWidget);
     expect(find.text('30'), findsOneWidget);
     expect(find.text('1'), findsNothing);
+
+    // Test checkbox list tile
+    tester.printToConsole('Testing checkbox...');
+    expect(find.byKey(const Key('EU_member')), findsOneWidget);
+
+    // Find the checkbox list tile
+    final checkboxTileFinder = find.byKey(const Key('EU_member'));
+
+    // Check if the checkbox is checked
+    final isCheckboxChecked =
+        await tester.widget<CheckboxListTile>(checkboxTileFinder).value;
+
+    expect(isCheckboxChecked, false);
+
+    // Tap on the checkbox
+    await tester.tap(checkboxTileFinder);
+    await tester.pumpAndSettle();
+
+    // Check if the checkbox is now checked
+    final isCheckboxCheckedAfterTap =
+        await tester.widget<CheckboxListTile>(checkboxTileFinder).value;
+
+    expect(isCheckboxCheckedAfterTap, true);
+
+    // Test state dropdown field
+    tester.printToConsole('Testing state dropdown...');
+    expect(find.byKey(const Key('country')), findsOneWidget);
   });
 }
