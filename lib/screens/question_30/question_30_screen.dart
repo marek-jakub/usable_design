@@ -75,7 +75,7 @@ class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
               padding: const EdgeInsets.fromLTRB(10, 7, 10, 7),
               child: CheckboxListTile(
                   title: const Text(
-                      'Is your country of origin a member of European Union?'),
+                      'Country of origin a member of European Union?'),
                   value: _euMember,
                   onChanged: (bool? value) {
                     setState(() {
@@ -147,8 +147,8 @@ class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
 
   String _getDescription() {
     String description = '''
-      Based on this information, following up queries should compute available
-      information based on information provided by users, providing either all
+      Based on this information, follow up queries should compute available
+      information based on information provided by users, giving either all
       European countries or only countries of the EU.
       ''';
 
