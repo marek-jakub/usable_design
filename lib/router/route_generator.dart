@@ -10,9 +10,12 @@ class RouteGenerator {
       case '/':
         return MaterialPageRoute(
             settings: settings, builder: (_) => const QuestionListScreen());
+      case '/question_29':
+        return MaterialPageRoute(
+            settings: settings, builder: (_) => const QuestionTwentyNine());
       case '/question_30':
         return MaterialPageRoute(
-            settings: settings, builder: (_) => const QuestionThirtyScreen());
+            settings: settings, builder: (_) => const QuestionThirty());
       case '/references':
         return MaterialPageRoute(
             settings: settings, builder: (_) => const ReferencesScreen());

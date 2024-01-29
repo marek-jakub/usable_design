@@ -4,14 +4,14 @@ import '../../data/europe.dart';
 
 import 'state_dropdown_field.dart';
 
-class QuestionThirtyScreen extends StatefulWidget {
-  const QuestionThirtyScreen({Key? key}) : super(key: key);
+class QuestionThirty extends StatefulWidget {
+  const QuestionThirty({Key? key}) : super(key: key);
 
   @override
-  State<QuestionThirtyScreen> createState() => _QuestionThirtyScreenState();
+  State<QuestionThirty> createState() => _QuestionThirtyState();
 }
 
-class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
+class _QuestionThirtyState extends State<QuestionThirty> {
   // EU member checkbox value
   bool _euMember = false;
 
