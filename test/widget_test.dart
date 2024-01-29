@@ -57,7 +57,7 @@ void main() {
 
     // Check if the checkbox is checked
     final isCheckboxChecked =
-        await tester.widget<CheckboxListTile>(checkboxTileFinder).value;
+        tester.widget<CheckboxListTile>(checkboxTileFinder).value;
 
     expect(isCheckboxChecked, false);
 
@@ -67,7 +67,7 @@ void main() {
 
     // Check if the checkbox is now checked
     final isCheckboxCheckedAfterTap =
-        await tester.widget<CheckboxListTile>(checkboxTileFinder).value;
+        tester.widget<CheckboxListTile>(checkboxTileFinder).value;
 
     expect(isCheckboxCheckedAfterTap, true);
 
