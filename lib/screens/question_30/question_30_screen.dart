@@ -120,60 +120,46 @@ class _QuestionThirtyScreenState extends State<QuestionThirtyScreen> {
   }
 
   String _getQuestion30() {
-    String question = '''
-      Users dislike typing, is information computed for the users where
-       applicable?''';
-
-    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
-    question = question.replaceAll('\n', '');
-    question = question.replaceAll(extraWhiteSpace, ' ');
+    String question =
+        'Users dislike typing, is information computed for the users where '
+        'applicable?';
 
     return question;
   }
 
   String _getIntro() {
-    String introduction = '''
-      According to Lacey (2018), users are less likely to fill in forms where
-      their effort is needed to search for information before inputting it.
-      This applies even more strongly to information, which is publicly
-      available. As an example, to following form stub asks European users
-      to confirm their origin is within the European Union (EU).
-      ''';
-
-    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
-    introduction = introduction.replaceAll('\n', '');
-    introduction = introduction.replaceAll(extraWhiteSpace, ' ');
+    String introduction =
+        'According to Lacey (2018), users are less likely to fill in forms where '
+        'their effort is needed to search for information before inputting it. '
+        'This applies even more strongly to information, which is publicly '
+        'available. As an example, to following form stub asks European users '
+        'to confirm their origin is within the European Union (EU).';
 
     return introduction;
   }
 
   String _getDescription() {
-    String description = '''
-      Based on this information, follow up queries should compute available
-      information based on information provided by users, giving either all
-      European countries or only countries of the EU.
-      ''';
-
-    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
-    description = description.replaceAll('\n', '');
-    description = description.replaceAll(extraWhiteSpace, ' ');
+    String description =
+        'Based on this information, follow up queries should compute available '
+        'information based on information provided by users, giving either all '
+        'European countries or only countries of the EU.';
 
     return description;
   }
 
   String _getSummary() {
-    String description = '''
-      As can be seen, computing information based on user input makes it easier
-      to fill in form, speeds up information input and lowers the probability
-      of user entering erroneous data. One drawback, however, is that the
-      computing logic has to be based on latest and valid information. Keeping
-      software up to date is of paramount importance, and this responsibility
-      is on developers' shoulders, not users’!
-      ''';
+    String description =
+        'As can be seen, computing information based on user input makes it easier '
+        'to fill in form, speeds up information input and lowers the probability '
+        'of user entering erroneous data. One drawback, however, is that the '
+        'computing logic has to be based on latest and valid information. Keeping '
+        'software up to date is of paramount importance, and this responsibility '
+        "is on developers' shoulders, not users'!";
 
-    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
-    description = description.replaceAll('\n', '');
-    description = description.replaceAll(extraWhiteSpace, ' ');
+    // In string placed in triple ' remove extra whitespace and newlines
+    // final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
+    // description = description.replaceAll('\n', '');
+    // description = description.replaceAll(extraWhiteSpace, ' ');
 
     return description;
   }
