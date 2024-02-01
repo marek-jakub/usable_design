@@ -21,7 +21,10 @@ class ReferencesScreen extends StatelessWidget {
             final reference = references[index];
             return Padding(
               padding: const EdgeInsets.all(1.0),
-              child: Text(_formatText(reference)),
+              child: Text(
+                reference,
+                textAlign: TextAlign.justify,
+              ),
             );
           },
           separatorBuilder: (context, index) {
@@ -30,13 +33,5 @@ class ReferencesScreen extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  String _formatText(String question) {
-    final extraWhiteSpace = RegExp(r'(?! )\s+| \s+');
-    question = question.replaceAll('\n', '');
-    question = question.replaceAll(extraWhiteSpace, ' ');
-
-    return question;
   }
 }
