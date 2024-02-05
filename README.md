@@ -14,7 +14,7 @@ This project is a study of usablity questions posed by Mugisha et al. (2019) [[1
 
 The application lists usability questions posed by Mugisha et al. (2019) [[1]](#1), which are ordered according to the importance weight. These questions pertain to the mobile form usage, but have a wider application in usable design of forms.
 
-Each question leads to an interactive sample, with the main goal to show how the usable design works, but also explains why such feature could be used. There are many ways in how these features could be implemented, and this study's aim is not to explore all of them.
+Each question leads to an interactive sample, with the main goal to show how the usable design works, but which also explains why such feature could be used. There are many ways in how these features could be implemented, and this study's aim is not to explore all of them.
 
 ## Install and run
 
