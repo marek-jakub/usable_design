@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../data/questions.dart' as uq;
 import '../../data/europe.dart';
 
 import 'state_dropdown_field.dart';
@@ -56,7 +57,7 @@ class _QuestionThirtyState extends State<QuestionThirty> {
                       padding: const EdgeInsets.fromLTRB(0, 7, 0, 0),
                       child: Text.rich(
                         TextSpan(
-                          text: _getQuestion30(),
+                          text: uq.UsabilityQuestions().getQuestions[29],
                         ),
                       ),
                     ),
@@ -117,14 +118,6 @@ class _QuestionThirtyState extends State<QuestionThirty> {
         ),
       ),
     );
-  }
-
-  String _getQuestion30() {
-    String question =
-        'Users dislike typing, is information computed for the users where '
-        'applicable?';
-
-    return question;
   }
 
   String _getIntro() {
