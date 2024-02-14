@@ -70,6 +70,7 @@ class _QuestionTwentyNineState extends State<QuestionTwentyNine> {
               ),
             ),
             Padding(
+              key: const ValueKey('description'),
               padding: const EdgeInsets.fromLTRB(14, 5, 14, 10),
               child: Text(
                 _getDescription(),
@@ -101,6 +102,7 @@ class _QuestionTwentyNineState extends State<QuestionTwentyNine> {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 8, 30, 8),
                 child: TextButton(
+                  key: const ValueKey('clear_button'),
                   onPressed: () {
                     setState(() {
                       _textController.clear();
